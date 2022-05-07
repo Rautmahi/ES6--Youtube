@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+#container{
+
+    margin: auto;
+    height: 50%;
+    width: 80%;
+    border: 1px solid red;
+}
+
+    </style>
+</head>
+<body>
+    
+
+    <div id="container"></div>
+</body>
+</html>
+
+
+<script>
+
+  var videodata=JSON.parse(localStorage.getItem("video"));
+
+    console.log(videodata)
+
+    videodata.map(function(ele,index)
+    {
+        var box=document.createElement("div")
+
+        var vid=document.createElement("vid")
+        vid.innerHTML=ele.videoId;
+        
+        var title=document.createElement("p");
+        title.textContent=ele.title;
+
+
+        box.append(vid,title)
+        document.querySelector("#container").append(box);
+
+    })
+</script>
