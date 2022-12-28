@@ -1,6 +1,6 @@
 # ES6--Youtube
 This is a youtube application.  this application is made up of HTML, CSS, JS.when users enter this application
-we have to simply search for the video they want, and the application shows the particular videos and also shows other videos related.4
+we have to simply search for the video they want, and the application shows the particular videos and also shows other videos related.
 <br/>
 <br/>
 
